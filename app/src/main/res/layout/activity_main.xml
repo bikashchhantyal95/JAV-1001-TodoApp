@@ -3,43 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="15dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TODO LIST"
         android:textAlignment="center"
-        android:textSize="50dp" />
+        android:textSize="36sp"
+        android:layout_marginBottom="20dp"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/borders"
-        android:paddingLeft="15dp"
-        />
+        android:hint="@string/enter_text"
+        android:padding="16dp"
+        android:textSize="16sp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
+        android:contentDescription="@string/add_btn"
         app:srcCompat="@android:drawable/ic_input_add" />
 
     <LinearLayout
+        android:id="@+id/todoList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
-    </LinearLayout>
-
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp" />
 
 </LinearLayout>

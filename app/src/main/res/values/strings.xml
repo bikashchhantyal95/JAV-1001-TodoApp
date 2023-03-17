@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JAV1001_TodoAPP</string>
+    <string name="add_btn">Add Button</string>
+    <string name="enter_text">Enter task here...</string>
 </resources>
